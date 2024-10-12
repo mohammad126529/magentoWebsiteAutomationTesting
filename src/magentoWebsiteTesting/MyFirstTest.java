@@ -42,7 +42,7 @@ public class MyFirstTest{
 
 	}
 	
-	@Test(priority = 1 ,enabled = false)
+	@Test(priority = 1 ,enabled = true)
 	public void CreateAnAccount() throws InterruptedException {
 
 //      Three way to select element
@@ -117,7 +117,7 @@ public class MyFirstTest{
 	}
 	
 	
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2,enabled = true)
 	public void logOut() {
 		
 		driver.get(LogoutPage);
@@ -131,7 +131,7 @@ public class MyFirstTest{
 	}
 	
 	
-	@Test(priority = 3,enabled = false)
+	@Test(priority = 3,enabled = true)
 	public void loginTest() throws InterruptedException {
 		WebElement LoginPage = driver.findElement(By.linkText("Sign In"));
 		LoginPage.click();
@@ -158,7 +158,7 @@ public class MyFirstTest{
 	}
 	
 	
-	@Test(priority = 4 ,enabled = false)
+	@Test(priority = 4 ,enabled = true)
 	public void addMenItem() throws InterruptedException {
 
 		
@@ -210,7 +210,7 @@ public class MyFirstTest{
 
 	}
 	
-	@Test(priority = 4 , enabled = true)
+	@Test(priority = 5 , enabled = true)
 	public void  addWomenItem() throws InterruptedException {
 		
 		WebElement WomenSection = driver.findElement(By.id("ui-id-4"));
